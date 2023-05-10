@@ -69,4 +69,12 @@
 	  	</snapshotRepository>
 	</distributionManagement-->
 	
+	<distributionManagement>
+	   	<repository>
+	     	<id>hibernate-core</id>
+	     	<name>GitHub OWNER Apache Maven Packages</name>
+	     	<url>https://maven.pkg.github.com/ddominguezh/hibernate-core</url>
+	   	</repository>
+	</distributionManagement>
+	
 </project>
