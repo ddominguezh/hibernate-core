@@ -3,7 +3,10 @@ package com.ddominguezh.hibernate.core.shared.infrastructure.config;
 public final class Parameter {
 
     public String get(String key) throws ParameterNotExist {
-        String value = System.getenv(key).toString();
+        String value = System.getenv(key);
+        if(value == null) {
+        	value = System.getProperty(key);
+        }
 
         if (null == value) {
             throw new ParameterNotExist(key);
